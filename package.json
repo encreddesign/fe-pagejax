@@ -1,0 +1,11 @@
+{
+  "name": "fe-pagejax",
+  "version": "1.0.0",
+  "description": "Pagejax makes page loading better for user experience",
+  "main": "dist/package.js",
+  "types": "dist/package.d.ts",
+  "dependencies": {
+    "ts-loader": "^4.1.0",
+    "typescript": "^2.7.2"
+  }
+}
