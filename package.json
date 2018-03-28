@@ -4,8 +4,40 @@
   "description": "Pagejax makes page loading better for user experience",
   "main": "dist/package.js",
   "types": "dist/package.d.ts",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "test": "jest"
+  },
+  "author": "Joshua Grierson",
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  },
   "dependencies": {
+    "jasmine-reporters": "^2.3.0",
+    "jest": "^22.4.2",
+    "ts-jest": "^22.4.2",
     "ts-loader": "^4.1.0",
-    "typescript": "^2.7.2"
+    "typescript": "^2.7.2",
+    "webpack": "^4.1.1",
+    "webpack-dev-server": "^3.1.1"
+  },
+  "devDependencies": {
+      "@types/jasmine": "^2.8.6",
+      "@types/jest": "^22.2.0",
+      "husky": "^0.14.3",
+      "prettier": "1.11.1",
+      "pretty-quick": "^1.4.1",
+      "webpack-cli": "^2.0.12"
   }
 }
